@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormularioEnvioComponent } from './formulario-envio/formulario-envio.component';
 import { ValidacionCarritoComponent } from './pages/validacion-carrito/validacion-carrito.component';
 import { FormularioPagosComponent } from './pages/formulario-pagos/formulario-pagos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { FormularioPagosComponent } from './pages/formulario-pagos/formulario-pa
     AppComponent,
     FormularioEnvioComponent,
     ValidacionCarritoComponent,
-    FormularioPagosComponent
+    FormularioPagosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
