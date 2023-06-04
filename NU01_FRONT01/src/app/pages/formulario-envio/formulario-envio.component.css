@@ -32,6 +32,7 @@ p{
     font-weight: bold;
 }
 
+
 div{
     border-radius: 5px;
 }
@@ -73,12 +74,36 @@ div{
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
 }
 
+.datos-nombre{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+
 /* AJUSTES */
+
+/* Ajustar juntar Nombre-Apellido */
+
+.datos-nombre-vertical{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.datos-nombre-vertical:first-child {
+    margin-right: 50px; 
+}
+
+/* Fin Ajustar juntar Nombre-Apellido */
 
 /* Ajuste tamaño letra en label */
 .label-correos{
     font-size: 10px;
 }
+
 
 /* Pegar el cuadrito con el texto en CORREO EXCLUSIVO */
 .Ajuste-exclusivos{
@@ -92,4 +117,20 @@ div{
 .input-large{
     width: 90%;
     border-radius: 5px;
+    border-width: 0.5px;
+    height: 3vh;
+}
+
+.input-mini{
+    width: 80%;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 3vh;
+}
+
+.input-medium{
+    width: 38%;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 3vh;
 }

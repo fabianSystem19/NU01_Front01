@@ -8,7 +8,7 @@
 
         <div formGroupName="correo" class="Cont-Correo">
             <h2>INGRESA TUS DATOS</h2>
-            <label for="correo">Dirección de correo electrónico:</label>
+            <label for="correo">Dirección de correo electrónico: </label>
             <input class="input-large" id="correo" type="email" formControlName="correo">
 
             <div class="Ajuste-exclusivos"> <!-- Para pegar -->
@@ -19,33 +19,47 @@
         <br>
 
         <div formGroupName="datos" class="Cont-datos">
-          <label for="nombre">Nombre:</label>
-          <br> 
-          <input id="nombre" type="text" formControlName="nombre">
-          <br>
 
-          <label for="apellido">Apellido:</label>
-          <br> 
-          <input id="apellido" type="text" formControlName="apellido">
-          <br>
+          <div class="datos-nombre">
+            <div class="datos-nombre-vertical">
+              <label for="nombre">Nombre: </label>
+              <br> 
+              <input class="input-mini" id="nombre" type="text" formControlName="nombre">
+              <br>
+            </div>
+
+            <div class="datos-nombre-vertical">
+              <label for="apellido">Apellido: </label>
+              <br> 
+              <input class="input-mini" id="apellido" type="text" formControlName="apellido">
+              <br>
+            </div>
+          </div>
+
       
           <label for="pais">País:</label>
           <br> 
-          <input id="pais" type="text" formControlName="pais">
+          <input class="input-medium" id="pais" type="text" formControlName="pais">
           <br>
-      
-          <label for="departamento">Departamento:</label>
-          <br> 
-          <input id="departamento" type="text" formControlName="departamento">
-          <br>
-      
-          <label for="ciudad">Ciudad:</label>
-          <br> 
-          <input id="ciudad" type="text" formControlName="ciudad">
-          <br>
+
+          <div class="datos-nombre">
+            <div class="datos-nombre-vertical">
+              <label for="departamento">Departamento:</label>
+              <br> 
+              <input class="input-mini" id="departamento" type="text" formControlName="departamento">
+              <br>
+            </div>
+
+            <div class="datos-nombre-vertical">
+              <label for="ciudad">Ciudad:</label>
+              <br> 
+              <input class="input-mini" id="ciudad" type="text" formControlName="ciudad">
+            </div>
+            <br>
+          </div>
           <label for="direccion">Dirección:</label>
           <br> 
-          <input id="direccion" type="text" formControlName="direccion">
+          <input class="input-large" id="direccion" type="text" formControlName="direccion">
         </div>
         <br>
         
