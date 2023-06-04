@@ -1,0 +1,95 @@
+/* Parámetros texto */
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Fin parámetros texto */
+
+
+.Titulo{
+    color: #16697A;
+    font-weight: bold;
+}
+
+div{
+    border-radius: 5px;
+}
+.Cont-rec{
+    background-color: #16697A;
+    height: 4vh;
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contendor Principal formulario */
+.Cont-Principal{
+    border-color: #ede7e3;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 100vh;
+    background-color: #ede7e3;
+}
+
+.Cont-Correo{
+    margin: 10px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    height: 25vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
+
+.Cont-datos{
+    margin: 10px;
+    border-radius: 15px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
+
+/* AJUSTES */
+
+/* Ajuste tamaño letra en label */
+.label-correos{
+    font-size: 10px;
+}
+
+/* Pegar el cuadrito con el texto en CORREO EXCLUSIVO */
+.Ajuste-exclusivos{
+    display: flex; 
+    align-items: center;
+}
+
+
+/* AJUSTES  INPUTS*/
+
+.input-large{
+    width: 90%;
+    border-radius: 5px;
+}
