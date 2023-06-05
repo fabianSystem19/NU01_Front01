@@ -1,0 +1,32 @@
+/* Parámetros texto */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Fin parámetros texto */
+.Titulo{
+    color: #16697A;
+    font-weight: bold;
+}
+.Producto{
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 130px;
+}
