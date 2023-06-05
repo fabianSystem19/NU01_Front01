@@ -1,3 +1,8 @@
+<head>
+<script src="https://kit.fontawesome.com/a5f6b8b50e.js" crossorigin="anonymous"></script>
+</head>
+
+
 <h1 class="Titulo">Finalizar compra</h1>
 
 <div class="Cont-rec">
@@ -6,8 +11,8 @@
 
 
 <div class="Cont-Divisor">
-  <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
-    <div class="Cont-Principal" *ngIf="formulario">
+  <form [formGroup]="formEnvios" (submit)="send()">
+    <div class="Cont-Principal">
     
             <div formGroupName="correo" class="Cont-Correo">
                 <h2>INGRESA TUS DATOS</h2>
@@ -15,6 +20,7 @@
                 <input class="input-large" id="correo" type="email" formControlName="correo">
                 <label class="Letra-prqueña" for="correo">El número de pedido y el recibo se enviarán a esta dirección de correo electrónico.</label>
                 <br>
+
                 <div class="Ajuste-exclusivos"> <!-- Para pegar -->
                     <input id="correos_exclusivos" type="checkbox" formControlName="correos_exclusivos">
                     <label class="label-correos" for="correos_exclusivos">Me gustaría recibir correos electrónicos exclusivos con descuentos e información de productos (opcional)</label>
@@ -69,6 +75,7 @@
             <div class="Cont-costoenvios" formGroupName="costo_envio">
               <h1>Costo de envío</h1>
               <div class="Cont-costoenvios-pf">
+                <i class="fa-sharp fa-light fa-check"></i>
                 <p>Precio fijo: </p>
                 <p>$15.000</p>
               </div>
@@ -109,7 +116,20 @@
         </div>
         
       </div>
-    
+      <table class="Productos">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>Producto</h2></th>
+                <th><h3>Precio</h3></th>
+                <th><h3>Cantidad</h3></th>
+                <th><h3>Total</h3></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
       <p class="p-hd">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
         <button class="Btn-Pagos" type="submit">Realizar pago</button>
     </div>

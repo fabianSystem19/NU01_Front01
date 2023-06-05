@@ -92,7 +92,7 @@ div{
 .Cont-datos{
     margin: 10px;
     border-radius: 15px;
-    height: 55vh;
+    height: 70vh;
     display: flex;
     flex-direction: column; /* quede en columna, no vertical */
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
@@ -257,4 +257,18 @@ div{
     border-radius: 10px;
     width: 20vh;
     border-color: #16697A;
+}
+
+/* Estilo para la tabla */
+.Productos {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+.Productos th,
+.Productos td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
 }

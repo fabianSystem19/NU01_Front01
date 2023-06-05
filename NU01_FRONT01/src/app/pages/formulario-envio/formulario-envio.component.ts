@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-formulario-envio',
@@ -7,31 +8,33 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./formulario-envio.component.css']
 })
 export class FormularioEnvioComponent implements OnInit {
+
+  public formEnvios: FormGroup = new FormGroup({});
   
-  formulario: FormGroup = new FormGroup({});
-  
-  ngOnInit() {
-    this.formulario = new FormGroup({
-      correo: new FormControl(''),
-      correos_exclusivos: new FormControl(''),
-      datos: new FormGroup({
-        nombre: new FormControl(''),
-        apellido: new FormControl(''),
-        pais: new FormControl(''),
-        departamento: new FormControl(''),
-        ciudad: new FormControl(''),
-        direccion: new FormControl('')
-      }),
-      facturacion: new FormGroup({
-        cedula: new FormControl(''),
-        telefono: new FormControl('')
-      })
-    });
+  elementos: any[] = [
+    { img: 'Foto', producto: 'Aifon', precio: 500, cantidad: 2 },
+    { img: 'Foto', producto: 'RunRun', precio: 300, cantidad: 3 },
+  ];
+
+  constructor(private formBuilder: FormBuilder){
+
   }
   
-  enviarFormulario(): void {
-    if (this.formulario.valid) {
-      console.log(this.formulario.value);
-    }
+  ngOnInit(): void {
+    this.formEnvios = this.formBuilder.group({
+      correo: ['', [Validators.required, Validators.email]],
+      nombre: ['', Validators.required],
+      apellido: ['', Validators.required],
+      pais: ['', Validators.required],
+      departamento: ['', Validators.required],
+      ciudad: ['', Validators.required],
+      direccion: ['', Validators.required],
+      cedula: ['', Validators.required],
+      telefono: ['', Validators.required]
+    });
+  }
+
+  send(): any{
+    console.log(this.formEnvios.value);
   }
 }
