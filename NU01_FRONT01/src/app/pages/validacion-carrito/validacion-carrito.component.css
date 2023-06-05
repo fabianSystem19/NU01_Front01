@@ -22,11 +22,24 @@ p{
 
 /* Fin parámetros texto */
 .Titulo{
+    padding: 10px;
     color: #16697A;
     font-weight: bold;
+
 }
 .Producto{
+    padding: 10px;
     display: inline-block;
     font-weight: bold;
     margin-right: 130px;
 }
+
+.resum_info {
+    width: 500px;
+    height: 600px;
+    border: 5px solid black;
+    float: right;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+  
