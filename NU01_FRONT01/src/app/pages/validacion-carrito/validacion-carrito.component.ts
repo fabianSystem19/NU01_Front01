@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-validacion-carrito',
   templateUrl: './validacion-carrito.component.html',
@@ -15,6 +16,15 @@ export class ValidacionCarritoComponent {
     const indice = this.elementos.indexOf(elemento);
     if (indice !== -1) {
       this.elementos.splice(indice, 1);
+    }
+  }
+  aumentarCantidad(dato: any) {
+    dato.cantidad++;
+  }
+  
+  disminuirCantidad(dato: any) {
+    if (dato.cantidad > 0) {
+      dato.cantidad--;
     }
   }
 }

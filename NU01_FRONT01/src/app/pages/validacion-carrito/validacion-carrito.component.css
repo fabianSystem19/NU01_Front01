@@ -30,6 +30,11 @@ p{
     font-weight: bold;
 
 }
+.titulo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Agrega un margen derecho para separar la imagen del título */
+  }
 
 .ContPrincipal{
     display: flex;
@@ -83,6 +88,7 @@ p{
 
 .Productos td:nth-child(6) {
     width: 5%;
+    
     }
 .botonEliminar {
     background-image: url('https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/app/imgs/eliminar.png');
