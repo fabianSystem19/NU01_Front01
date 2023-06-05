@@ -172,6 +172,25 @@ div{
     align-items: center;
 }
 
+
+/* Ajuste cuadro derecha (carrito de compra) */
+
+.dos{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.dosgrande{
+    width: 60%;
+}
+
+.grandedos{
+    margin: 0;
+    vertical-align:top;
+}
+
 /* Fin Ajustar juntar Nombre-Apellido */
 
 /* Ajuste tamaño letra en label */
@@ -210,6 +229,29 @@ div{
     height: 5vh;
 }
 
+
 .p-hd{
     font-size: 10px;
+}
+
+
+/* AJUSTES  Botones*/
+
+
+.Btn-Carrito{
+    border-radius: 5px;
+    background-color: #ffa62b;
+    border-color: #ffa62b;
+    color: #FFFF;
+    height: 4vh;
+    width: 15vh;
+}
+
+.Btn-Pagos{
+    background-color: #16697A;
+    color: #FFFF;
+    height: 5vh;
+    border-radius: 10px;
+    width: 20vh;
+    border-color: #16697A;
 }
