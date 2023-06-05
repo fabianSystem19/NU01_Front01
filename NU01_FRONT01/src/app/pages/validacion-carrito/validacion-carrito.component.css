@@ -1,6 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+
 /* Parámetros texto */
 
 h1{
@@ -32,9 +33,9 @@ p{
 
 }
 .IconoTitulo {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
+    border: none;
+    color: #489fb5;
+    font-size: auto;
   }
 
 .ContPrincipal{
@@ -55,7 +56,7 @@ p{
     }
 
 .Productos td {
-    border-bottom: 4px solid #00aeff;
+    border-bottom: 4px solid #489fb5;
     padding: 8px;
   }
 
@@ -84,12 +85,21 @@ p{
     }
 
 .Productos td:nth-child(6) {
+    
     width: 5%;
     
     }
+.IconoEliminar {
+    color: #ea3546;
+    font-size: 24px;
+    }
+      
 .BotonEliminar {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     }
 
 .ResumInfo {
@@ -103,7 +113,7 @@ p{
     
 .SubTotal {
     display: flex;
-    background-color: #e9e9e9;
+    background-color: #ede7e3;
     padding: 1px;
     padding-left: 2%;
     padding-right: 2%;
@@ -138,7 +148,7 @@ p{
 .RedimirCupon button {
   padding: 10px 12px;
   margin-left: 5%;
-  background-color: #e4ad36;
+  background-color: #ffa62b;
   color: #fff;
   border-radius: 40px;
   cursor: pointer;
