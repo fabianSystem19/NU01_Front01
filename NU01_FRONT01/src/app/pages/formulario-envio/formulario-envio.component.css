@@ -229,8 +229,11 @@ div{
     height: 5vh;
 }
 
-
 .p-hd{
+    font-size: 10px;
+}
+
+.Letra-prqueña{
     font-size: 10px;
 }
 

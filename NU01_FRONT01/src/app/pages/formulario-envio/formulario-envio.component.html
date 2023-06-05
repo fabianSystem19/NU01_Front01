@@ -13,7 +13,8 @@
                 <h2>INGRESA TUS DATOS</h2>
                 <label for="correo">Dirección de correo electrónico: </label>
                 <input class="input-large" id="correo" type="email" formControlName="correo">
-    
+                <label class="Letra-prqueña" for="correo">El número de pedido y el recibo se enviarán a esta dirección de correo electrónico.</label>
+                <br>
                 <div class="Ajuste-exclusivos"> <!-- Para pegar -->
                     <input id="correos_exclusivos" type="checkbox" formControlName="correos_exclusivos">
                     <label class="label-correos" for="correos_exclusivos">Me gustaría recibir correos electrónicos exclusivos con descuentos e información de productos (opcional)</label>
@@ -22,7 +23,7 @@
             <br>
     
             <div formGroupName="datos" class="Cont-datos">
-    
+              <h2>Envío</h2>
               <div class="datos-nombre">
                 <div class="datos-nombre-vertical">
                   <label for="nombre">Nombre: </label>
