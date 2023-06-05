@@ -36,11 +36,16 @@
 
         </div>
         <div class="TextCupon">
-            <h4 >¿Tienes un código de cúpon? Ingresalo aquí</h4>
+            <p >¿Tienes un código de cúpon? Ingresalo aquí</p>
         </div>
-        <div class="RedimirCupon">
-            <input id="cupon" type="text" placeholder="Cupón" formControlName="cupon">
-            <button (click)="aplicarCupon()">Redimir</button>
-        </div>
+        <form [formGroup]="cuponForm" (ngSubmit)="aplicarCupon()">
+            <div class="RedimirCupon">
+              <input id="cupon" type="text" placeholder="Código" formControlName="cupon">
+              <button type="submit">Redimir</button>
+            </div>
+        </form> 
+        <div class="TextCupon">
+            <h3 >Costo de Envío:</h3>
+        </div>         
     </div>
 </div>

@@ -133,5 +133,25 @@ p{
     margin-bottom: 10px;
     margin-left: auto; 
     margin-right: auto; 
-    width: 50%;
+    padding-left: 10%;
   }
+.RedimirCupon button {
+  padding: 10px 12px;
+  margin-left: 5%;
+  background-color: #e4ad36;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30%;
+}
+
+.RedimirCupon input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    width: 50%;
+}
