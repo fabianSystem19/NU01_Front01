@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './validacion-carrito.component.html',
   styleUrls: ['./validacion-carrito.component.css']
 })
+
 export class ValidacionCarritoComponent {
+
+
 
   elementos: any[] = [
     { img: 'Foto', producto: 'Aifon', precio:500, cantidad: 2},
@@ -26,5 +29,22 @@ export class ValidacionCarritoComponent {
     if (dato.cantidad > 0) {
       dato.cantidad--;
     }
+  }
+
+  calcularTotalProducto(item: any): number {
+    return item.precio * item.cantidad;
+  }
+
+  calcularSubtotal(): number {
+    let totalGeneral = 0;
+    for (let item of this.elementos) {
+      totalGeneral += this.calcularTotalProducto(item);
+    }
+    return totalGeneral;
+  }
+  
+  cupon: string = '';
+  aplicarCupon() {
+    console.log('Cupón aplicado:', this.cupon);
   }
 }
