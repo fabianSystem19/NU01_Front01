@@ -3,86 +3,115 @@
 <div class="Cont-rec">
     <p>Recuerde que las entregas en la ciudad de Bucaramanga son de 1 a 2 días hábiles y 3 a 7 días hábiles a nivel nacional</p>
 </div>
-<form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
-<div class="Cont-Principal" *ngIf="formulario">
 
-        <div formGroupName="correo" class="Cont-Correo">
-            <h2>INGRESA TUS DATOS</h2>
-            <label for="correo">Dirección de correo electrónico: </label>
-            <input class="input-large" id="correo" type="email" formControlName="correo">
 
-            <div class="Ajuste-exclusivos"> <!-- Para pegar -->
-                <input id="correos_exclusivos" type="checkbox" formControlName="correos_exclusivos">
-                <label class="label-correos" for="correos_exclusivos">Me gustaría recibir correos electrónicos exclusivos con descuentos e información de productos (opcional)</label>
-            </div> <!-- Para pegar  -->
-        </div>
-        <br>
-
-        <div formGroupName="datos" class="Cont-datos">
-
-          <div class="datos-nombre">
-            <div class="datos-nombre-vertical">
-              <label for="nombre">Nombre: </label>
-              <br> 
-              <input class="input-mini" id="nombre" type="text" formControlName="nombre">
-              <br>
-            </div>
-
-            <div class="datos-nombre-vertical">
-              <label for="apellido">Apellido: </label>
-              <br> 
-              <input class="input-mini" id="apellido" type="text" formControlName="apellido">
-              <br>
-            </div>
-          </div>
-
-      
-          <label for="pais">País:</label>
-          <br> 
-          <input class="input-medium" id="pais" type="text" formControlName="pais">
-          <br>
-
-          <div class="datos-nombre">
-            <div class="datos-nombre-vertical">
-              <label for="departamento">Departamento:</label>
-              <br> 
-              <input class="input-mini" id="departamento" type="text" formControlName="departamento">
-              <br>
-            </div>
-
-            <div class="datos-nombre-vertical">
-              <label for="ciudad">Ciudad:</label>
-              <br> 
-              <input class="input-mini" id="ciudad" type="text" formControlName="ciudad">
+<div class="Cont-Divisor">
+  <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+    <div class="Cont-Principal" *ngIf="formulario">
+    
+            <div formGroupName="correo" class="Cont-Correo">
+                <h2>INGRESA TUS DATOS</h2>
+                <label for="correo">Dirección de correo electrónico: </label>
+                <input class="input-large" id="correo" type="email" formControlName="correo">
+    
+                <div class="Ajuste-exclusivos"> <!-- Para pegar -->
+                    <input id="correos_exclusivos" type="checkbox" formControlName="correos_exclusivos">
+                    <label class="label-correos" for="correos_exclusivos">Me gustaría recibir correos electrónicos exclusivos con descuentos e información de productos (opcional)</label>
+                </div> <!-- Para pegar  -->
             </div>
             <br>
-          </div>
-          <label for="direccion">Dirección:</label>
-          <br> 
-          <input class="input-large" id="direccion" type="text" formControlName="direccion">
+    
+            <div formGroupName="datos" class="Cont-datos">
+    
+              <div class="datos-nombre">
+                <div class="datos-nombre-vertical">
+                  <label for="nombre">Nombre: </label>
+                  <br> 
+                  <input class="input-mini" id="nombre" type="text" formControlName="nombre">
+                  <br>
+                </div>
+    
+                <div class="datos-nombre-vertical">
+                  <label for="apellido">Apellido: </label>
+                  <br> 
+                  <input class="input-mini" id="apellido" type="text" formControlName="apellido">
+                  <br>
+                </div>
+              </div>
+    
+          
+              <label for="pais">País:</label>
+              <br> 
+              <input class="input-medium" id="pais" type="text" formControlName="pais">
+              <br>
+    
+              <div class="datos-nombre">
+                <div class="datos-nombre-vertical">
+                  <label for="departamento">Departamento:</label>
+                  <br> 
+                  <input class="input-mini" id="departamento" type="text" formControlName="departamento">
+                  <br>
+                </div>
+    
+                <div class="datos-nombre-vertical">
+                  <label for="ciudad">Ciudad:</label>
+                  <br> 
+                  <input class="input-mini" id="ciudad" type="text" formControlName="ciudad">
+                </div>
+                <br>
+              </div>
+    
+              <label for="direccion">Dirección:</label>
+              <br> 
+              <input class="input-large" id="direccion" type="text" formControlName="direccion">
+            </div>
+            <div class="Cont-costoenvios" formGroupName="costo_envio">
+              <h1>Costo de envío</h1>
+              <div class="Cont-costoenvios-pf">
+                <p>Precio fijo: </p>
+                <p>$15.000</p>
+              </div>
+              <div class="Cont-costoenvios-cs">
+                <p>Por compras superiores a $1.000.000 tienes ENVÍO GRATIS</p>
+              </div>
+              
+            
+            </div>
+            <br>
+            <div formGroupName="facturacion" class="Cont-Facturacion" >
+              <div class="datos-nombre">
+                <div class="datos-nombre-vertical">
+                  <label for="cedula">Cédula:</label>
+                  <br> 
+                  <input class="input-mini" id="cedula" type="text" formControlName="cedula">
+                </div>
+      
+              <div class="datos-nombre-vertical">
+                <label for="telefono">Teléfono:</label>
+                <br> 
+                <input class="input-mini" id="telefono" type="text" formControlName="telefono">
+              </div>
+              </div>
+    
+            </div>
+            
+    </div>
+    
+    <div class="Cont-Segundo">
+      <div class="datos-nombre">
+        <div datos-nombre-vertical>
+          <h3>Resumen del pedido</h3>
         </div>
-        <br>
-        
-        <div formGroupName="costo_envio">
-          <p>Precio fijo: $15.000</p>
-          <p>Por compras superiores a $1.000.000 tienes ENVÍO GRATIS</p>
-        </div>
-        <br>
-        
-        <div formGroupName="facturacion">
-          <label for="cedula">Cédula:</label>
-          <br> 
-          <input id="cedula" type="text" formControlName="cedula">
-          <br>
-          <label for="telefono">Teléfono:</label>
-          <br> 
-          <input id="telefono" type="text" formControlName="telefono">
-        </div>
-        <br>
-        
-</div>
 
-<div>
-    <button type="submit">Enviar</button>
+        <div datos-nombre-vertical>
+          <button routerLink="/carrito">Ir al carrito</button>
+        </div>
+        
+      </div>
+    
+      <p class="p-hd">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
+        <button type="submit">Enviar</button>
+    </div>
+
+    </form>
 </div>
-</form>

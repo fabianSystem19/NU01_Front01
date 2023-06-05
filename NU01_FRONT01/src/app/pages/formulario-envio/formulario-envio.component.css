@@ -46,13 +46,37 @@ div{
 }
 
 /* Contendor Principal formulario */
+
+.Cont-Divisor{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    align-items: center;
+    margin-top: 2vw;
+}
+
 .Cont-Principal{
     border-color: #ede7e3;
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
-    width: 100vh;
+    width: 50vw;
     background-color: #ede7e3;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.Cont-Segundo{
+    border-color: black;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 30vw;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 10vw;
+    padding: 5px;
 }
 
 .Cont-Correo{
@@ -68,24 +92,68 @@ div{
 .Cont-datos{
     margin: 10px;
     border-radius: 15px;
-    height: 60vh;
+    height: 55vh;
     display: flex;
     flex-direction: column; /* quede en columna, no vertical */
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
 }
 
-.datos-nombre{
-    margin-bottom: 1vh;
-    display: flex;
-    flex-direction:row;
+.Cont-costoenvios{
+    border-color: #ede7e3;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #FFFF;
+    padding-left: 1.5vh;
 }
 
+.Cont-costoenvios-pf{
+    background-color: #ede7e3;
+    width: 90%;
+    height: 5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: black ;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.Cont-costoenvios-cs{
+    background-color: #96E072;
+    width: 90%;
+    height: 5vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cont-Facturacion{
+    margin: 10px;
+    border-radius: 15px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
 
 
 
 /* AJUSTES */
 
 /* Ajustar juntar Nombre-Apellido */
+
+.datos-nombre{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction:row;
+}
 
 .datos-nombre-vertical{
     display: flex;
@@ -95,6 +163,13 @@ div{
 
 .datos-nombre-vertical:first-child {
     margin-right: 50px; 
+}
+
+.datos-nombre-vertical a{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
 }
 
 /* Fin Ajustar juntar Nombre-Apellido */
@@ -118,19 +193,23 @@ div{
     width: 90%;
     border-radius: 5px;
     border-width: 0.5px;
-    height: 3vh;
+    height: 5vh;
 }
 
 .input-mini{
     width: 80%;
     border-radius: 5px;
     border-width: 0.5px;
-    height: 3vh;
+    height: 5vh;
 }
 
 .input-medium{
     width: 38%;
     border-radius: 5px;
     border-width: 0.5px;
-    height: 3vh;
+    height: 5vh;
+}
+
+.p-hd{
+    font-size: 10px;
 }
