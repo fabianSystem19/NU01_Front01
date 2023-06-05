@@ -1,4 +1,4 @@
-<h1 class="Titulo"><img src="https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/assets/icons/carrito-de-compras.png" alt="Icono">Carrito de Compras</h1>
+<h1 class="Titulo"><img src="/assets/icons/carrito-de-compras.png" alt="Icono" class="IconoTitulo">Carrito de Compras</h1>
 
 <div class="ContPrincipal">
 <div class="ContTabla">
@@ -23,7 +23,7 @@
                     <button (click)="aumentarCantidad(dato)">+</button>
                 </td>
                 <td>{{ dato.precio * dato.cantidad }}</td>
-                <td><button (click)="eliminarElemento(dato)"> <img src="https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/assets/icons/eliminar.png" alt="Eliminar"></button></td>
+                <td><button (click)="eliminarElemento(dato)"> <img src="/assets/icons/eliminar.png" alt="Eliminar" class="BotonEliminar"></button></td>
             </tr>
         </tbody>
     </table>

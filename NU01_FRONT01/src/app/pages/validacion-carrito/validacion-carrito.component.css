@@ -11,11 +11,13 @@ h1{
 h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    font-weight: bold;
 }
 
 h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    
 }
 
 p{
@@ -30,10 +32,10 @@ p{
     font-weight: bold;
 
 }
-.titulo img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px; /* Agrega un margen derecho para separar la imagen del título */
+.IconoTitulo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
   }
 
 .ContPrincipal{
@@ -57,8 +59,12 @@ p{
     
 }
 
+.Productos th {
+    font-weight: bold;
+    }
+
 .Productos td {
-    border-bottom: 4px solid #16697A;
+    border-bottom: 4px solid #00aeff;
     padding: 8px;
   }
 
@@ -90,9 +96,7 @@ p{
     width: 5%;
     
     }
-.botonEliminar {
-    background-image: url('https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/app/imgs/eliminar.png');
-    background-repeat: no-repeat;
-    background-position: center;
-
+.BotonEliminar {
+    width: 30px;
+    height: 30px;
     }
