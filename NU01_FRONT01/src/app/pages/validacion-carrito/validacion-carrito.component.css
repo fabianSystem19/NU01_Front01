@@ -1,3 +1,6 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* Parámetros texto */
 
 h1{
@@ -27,19 +30,63 @@ p{
     font-weight: bold;
 
 }
-.Producto{
-    padding: 10px;
-    display: inline-block;
-    font-weight: bold;
-    margin-right: 130px;
-}
 
-.resum_info {
-    width: 500px;
-    height: 600px;
+.ContPrincipal{
+    display: flex;
+}
+.ContTabla{
+    width: 60%;
+}
+.ResumInfo {
+    width: 40%;
+    height: auto;
     border: 5px solid black;
     float: right;
-    margin-right: 100px;
+    margin-right: 1%;
     border-radius: 15px;
   }
+
+.Productos{
+    width: 90%;
+    text-align: center;
+    
+}
+
+.Productos td {
+    border-bottom: 4px solid #16697A;
+    padding: 8px;
+  }
+
+
+.Productos td:nth-child(1) {
+    width: 25%;
+    border-bottom: none;
+    }
   
+
+.Productos td:nth-child(2) {
+    width: 30%;
+  }
+
+.Productos td:nth-child(3) {
+    width: 20%;
+  }
+
+
+.Productos td:nth-child(4) {
+      width: 5%;
+    }
+
+.Productos td:nth-child(5) {
+    width: 15%;
+    }
+
+.Productos td:nth-child(6) {
+    width: 5%;
+    }
+.botonEliminar {
+    background-image: url('https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/app/imgs/eliminar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    }

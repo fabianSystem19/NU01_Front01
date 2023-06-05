@@ -1,8 +1,29 @@
-<h1 class="Titulo">Carrito de Compras</h1>
+<h1 class="Titulo"><img src="https://github.com/fabianSystem19/NU01_Front01_Carro/blob/Jose/NU01_FRONT01/src/app/imgs/carrito-de-compras.png" alt="Icono">Carrito de Compras</h1>
 
-<div class="Producto"><h2 class="Producto">Producto</h2></div>
-<div class="Producto"><h2 >Precio</h2></div>
-<div class="Producto"><h2>Cantidad</h2></div>
-<div class="Producto"><h2>Total</h2></div>
+<div class="ContPrincipal">
+<div class="ContTabla">
+    <table class="Productos">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>Producto</h2></th>
+                <th><h2>Precio</h2></th>
+                <th><h2>Cantidad</h2></th>
+                <th><h2>Total</h2></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dato of elementos">
+                <td>{{ dato.img }}</td>
+                <td>{{ dato.producto }}</td>
+                <td>{{ dato.precio }}</td>
+                <td>{{ dato.cantidad }}</td>
+                <td>{{ dato.precio * dato.cantidad }}</td>
+                <td><button (click)="eliminarElemento(dato)" class="botonEliminar"> </button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-<div class="resum_info"></div>
+<div class="ResumInfo"></div>
+</div>
