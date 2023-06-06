@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* Parámetros texto */
 
 label{
@@ -6,10 +8,6 @@ label{
     font-weight: bold;
 }
 
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-}
 
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -18,9 +16,9 @@ h2{
 }
 
 h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold !important;
     margin: 0px;
 }
 
@@ -45,6 +43,8 @@ p{
     margin-top: 2%;
 }
 
+
+
 .contIzq{
     white-space: nowrap;
     width: 60%;
@@ -52,7 +52,7 @@ p{
 }
 
 .contDer{
-    grid-gap: 5px;
+    white-space: nowrap;
     width: 40%;
     margin-left: 2%;
 }
@@ -79,6 +79,7 @@ p{
 }
 
 .contResumenPedido{
+    white-space: nowrap;
     background-color: #f2f2f2;
     padding: 10px;
     border: 4px solid black;
@@ -100,15 +101,21 @@ p{
 
 .titResumen{
     width: 77%;
+    display: inline-block;
+}
+
+.tablaResumen{
+    width: 99%;
 }
 
 .botonEditarCarrito{
+    display: inline-block;
     background-color: #ffa62b;
     border: 1px black;
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    height: 5vb;
+    height: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
