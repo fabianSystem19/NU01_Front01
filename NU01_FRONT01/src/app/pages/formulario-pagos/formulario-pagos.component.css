@@ -80,6 +80,7 @@ u{
     margin-left: 1%;
     padding: 5px;
     height: auto;
+    
 }
 
 .contenedor-principal {
@@ -96,9 +97,11 @@ u{
     background-color: white;
     border: 2px solid #ccc;
     margin: 1%;
-    height: 120px;
+    height: auto;
     border-radius: 8px;
     padding: 5px;
+    display: inline-block;
+    position: relative;
   }
   
   .contenedor-inferior {
@@ -107,9 +110,10 @@ u{
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     margin: 0;
-    height: 120px;
+    height: auto;
     border-radius: 8px;
     padding: 5px;
+    margin: 1%;
   }
   
 .contIdentificacion{
@@ -185,8 +189,9 @@ u{
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    height: 25px;
+    height: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 .botonComprar{
@@ -199,41 +204,50 @@ u{
     height: 35px;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 
 .contBoton{
-    width: 25%;
+    width: 30%;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin-top: 1%;
+    margin-right: 0;
+    display: flex;
 }
 
 
 
 .contBotonComprar{
     width: 80%;
-    justify-content: center;
     align-items: center;
     margin-top: 1%;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 2%;
     height: auto;
+    display: inline-block;
 }
 
 .contTitulo{
-    width: 80%;
+    width: 100%;
     margin-top: 1%;
+    margin-left: 2%;
+    display: inline-block;
 }
 
 .contSubtotal{
-    width: 55%;
+    width: 70%;
     margin-top: 1%;
 }
 
 .precioSubtotal{
+    display: flex;
     width: 45%;
     margin-top: 1%;
+    justify-content: right;
+    padding-right: 2%;
 }
 
 .Envio{
@@ -246,6 +260,56 @@ u{
     border-collapse: collapse;
     color: black;
 }
+
+.entrega{
+
+    display: flex;
+    margin: 0;
+    vertical-align:top;
+    background-color: #96E072;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    align-items: end;
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    right: 10%;
+    justify-content: center;
+
+}
+
+.contPago {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de ancho flexible */
+    grid-gap: 10px; /* Espacio entre los elementos */
+    width: 95%;
+    padding: 2%;
+  }
+  
+  .columna-1 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de alto flexible */
+  }
+  
+  .contMetodo {
+    padding: 10px;
+  }
+  
+  .columna-2 {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: stretch; /* Alinear al estiramiento vertical */
+  }
+  
+  .contVistaPago {
+    background-color: white;
+    flex: 1; /* Ocupar todo el espacio vertical */
+    padding: 10px;
+  }
+  
+
 
 
 
