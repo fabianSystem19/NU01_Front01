@@ -1,32 +1,104 @@
+
 <body> <!-- El Body es provisional para ver ejecucion en tiempo real -->
+
 
     <h1 class="titulo">Finalizar compra</h1>
 
     <div class="contPrincipal">
-        <div class="contIzq">
-            <div class="contIdentificacion">
+        
+        <div class="contenedor-principal">
+            <div class="contenedor-izquierdo">
                 <h3>IDENTIFICACIÓN</h3>
             </div>
-            <div class="contEnvio">
-                <h3>ENVÍO</h3>
-            </div> 
-            <!--Contenedor de Pago-->
-            <div class="contPago">
-            <h3>PAGO</h3>
+            <div class="contenedor-derecho">
+                <div class="contTitulo">
+                    <h3>ENVÍO</h3>
+                </div>
+                <div class="contBoton">
+                    <button class="botonEditar" routerLink="/carrito">Editar Envío</button>
+                </div>
             </div>
-        </div> 
+            <div class="contenedor-inferior">
+                <h3>PAGO</h3>
+            </div>
+        </div>
+          
+
+
+
+
+
+
+
+
 
 
         <div class="contDer">
             <div class="contResumenPedido">
-                <div class="titResumen">
+                <div class="contTitulo">
                     <h3>RESUMEN DEL PEDIDO</h3>
-                </div> 
-                <div>
-                    <button routerLink="/carrito" class="botonEditarCarrito">Editar Carrito</button>
-                </div> 
-
+                </div>
+                <div class="contBoton">
+                    <button class="botonEditar" routerLink="/carrito">Editar Carrito</button>
+                </div>
+            </div> <br>
+            <table class="Productos">
+                <thead>
+                    <tr>
+                        <th colspan="2"><p>Foto</p></th>
+                        <th><p>Producto</p></th>
+                        <th><p>Total</p></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table> <br>
+            <div class="contResumenPedido">
+                <div class="contSubtotal">
+                    <h3 class="resumen">Subtotal</h3>
+                </div>
+                <div class="precioSubtotal">
+                    <p>Aqui va el precio</p>
+                </div>
             </div>
+            <div class="contResumenPedido">
+                <div class="contSubtotal">
+                    <h3 class="resumen">Descuento</h3>
+                </div>
+                <div class="precioSubtotal">
+                    <p>Aqui va el descuento</p>
+                </div>
+            </div>
+            <div class="contResumenPedido">
+                <div class="contSubtotal">
+                    <h3 class="resumen">Envío</h3>
+                </div>
+                <div class="precioSubtotal">
+                    <p>Aqui va el envío</p>
+                </div>
+            </div> <br>
+            <div class="Total">
+                <div class="contSubtotal">
+                    <h3 class="resumen">TOTAL</h3>
+                </div>
+                <div class="precioSubtotal">
+                    <p>Aqui va el TOTAL</p>
+                </div> 
+            </div> <br>
+            <p>Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra
+            <u>política de privacidad.</u> </p> <br>
+
+            <div class="contBotonComprar">
+                <button class="botonComprar" routerLink="/carrito">
+                    <h3> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+                    COMPRAR AHORA</h3>
+
+                </button>
+            </div> <br>
+
+
             
         </div>
 
