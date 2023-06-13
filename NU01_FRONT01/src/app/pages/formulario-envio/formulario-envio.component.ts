@@ -7,6 +7,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: './formulario-envio.component.html',
   styleUrls: ['./formulario-envio.component.css']
 })
+
+
 export class FormularioEnvioComponent implements OnInit {
 
   public formEnvios: FormGroup = new FormGroup({});
@@ -20,6 +22,8 @@ export class FormularioEnvioComponent implements OnInit {
 
   }
   
+  
+
   ngOnInit(): void {
     this.formEnvios = this.formBuilder.group({
       correo: ['', [Validators.required, Validators.email]],
@@ -32,9 +36,12 @@ export class FormularioEnvioComponent implements OnInit {
       cedula: ['', Validators.required],
       telefono: ['', Validators.required]
     });
+
+    console.log(this.elementos);
   }
 
   send(): any{
     console.log(this.formEnvios.value);
   }
+  
 }

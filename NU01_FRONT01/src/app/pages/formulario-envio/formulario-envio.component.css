@@ -1,7 +1,7 @@
 /* Parámetros texto */
 label{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1{
@@ -21,9 +21,12 @@ h3{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
+span{
+    color: red;
+}
 /* Fin parámetros texto */
 
 
@@ -38,7 +41,7 @@ div{
 }
 .Cont-rec{
     background-color: #16697A;
-    height: 4vh;
+    height: 7vh;
     color: #FFFF;
     display: flex;
     align-items: center;
@@ -80,19 +83,17 @@ div{
 }
 
 .Cont-Correo{
-    margin: 10px;
     background-color: #FFFF;
     border-radius: 15px;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column; /* quede en columna, no vertical */
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
 }
 
 .Cont-datos{
-    margin: 10px;
     border-radius: 15px;
-    height: 70vh;
+    height: 55vh;
     display: flex;
     flex-direction: column; /* quede en columna, no vertical */
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
@@ -137,7 +138,7 @@ div{
 .Cont-Facturacion{
     margin: 10px;
     border-radius: 15px;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     flex-direction: column; /* quede en columna, no vertical */
     padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
@@ -171,6 +172,8 @@ div{
     width: 50%;
     align-items: center;
 }
+
+
 
 
 /* Ajuste cuadro derecha (carrito de compra) */
@@ -212,7 +215,7 @@ div{
     width: 90%;
     border-radius: 5px;
     border-width: 0.5px;
-    height: 5vh;
+    height: 6vh;
 }
 
 .input-mini{
@@ -272,3 +275,4 @@ div{
     text-align: center;
     border: 1px solid black;
 }
+
