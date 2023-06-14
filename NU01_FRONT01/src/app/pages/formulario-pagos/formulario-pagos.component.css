@@ -302,7 +302,15 @@ u{
   
   .contMetodo {
     padding: 10px;
+    background-color: #489EB5;
+    margin: 2px;
+    height: auto;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
   }
+
+
   
   .columna-2 {
     background-color: #f2f2f2;
