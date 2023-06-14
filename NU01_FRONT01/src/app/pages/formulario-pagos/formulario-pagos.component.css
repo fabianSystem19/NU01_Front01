@@ -59,7 +59,7 @@ u{
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
-    width: 60%;
+    width: 65%;
     display: inline-block;
     vertical-align:top;
     margin-left: 1%;
@@ -74,12 +74,13 @@ u{
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
-    width: 40%;
+    width: 35%;
     display: inline-block;
     vertical-align:top;
     margin-left: 1%;
     padding: 5px;
     height: auto;
+    align-items: center;
     
 }
 
@@ -209,7 +210,7 @@ u{
 
 
 .contBoton{
-    width: 30%;
+    width: 40%;
     justify-content: center;
     align-items: left;
     margin-top: 1%;
@@ -236,6 +237,8 @@ u{
     margin-left: 2%;
     display: inline-block;
 }
+
+
 
 .contSubtotal{
     width: 70%;
@@ -273,7 +276,7 @@ u{
     color: black;
     align-items: end;
     position: absolute;
-    bottom: 3%;
+    bottom: 10%;
     left: 10%;
     right: 10%;
     justify-content: center;
