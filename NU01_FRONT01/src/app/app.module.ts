@@ -19,6 +19,7 @@ import { FormularioPagosComponent } from './pages/formulario-pagos/formulario-pa
 import { FormularioEnvioComponent } from './pages/formulario-envio/formulario-envio.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
