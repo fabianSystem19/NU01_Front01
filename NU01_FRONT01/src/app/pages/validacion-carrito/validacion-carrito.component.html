@@ -1,4 +1,7 @@
-<h1 class="Titulo"><img src="/assets/icons/carrito-de-compras(1).png" alt="Icono" class="IconoTitulo">Carrito de Compras</h1>
+
+<div>
+    <h1 class="Titulo"><i class="fa-regular fa-cart-shopping IconoTitulo"></i>Carrito de Compras</h1>
+</div>
 
 <div class="ContPrincipal">
     <div class="ContTabla">
@@ -23,7 +26,12 @@
                         <button (click)="aumentarCantidad(dato)">+</button>
                     </td>
                     <td>{{ calcularTotalProducto(dato) }}</td>
-                    <td><button (click)="eliminarElemento(dato)"> <img src="/assets/icons/eliminar.png" alt="Eliminar" class="BotonEliminar"></button></td>
+                    <td>
+                        <button class="BotonEliminar" (click)="eliminarElemento(dato)">
+                        <i class="fa-regular fa-trash-can IconoEliminar"></i>
+                        </button>
+                      </td>
+                      
                 </tr>
             </tbody>
         </table>
@@ -45,7 +53,7 @@
             </div>
         </form> 
         <div class="TextCupon">
-            <h3 >Costo de Envío:</h3>
+            <p >Costo de Envío:</p>
         </div>         
     </div>
 </div>
